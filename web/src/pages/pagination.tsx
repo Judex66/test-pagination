@@ -57,7 +57,7 @@ const Pagination = ({currentPage, usersPerPage, totalUsers, paginate}: Paginatio
     </div>
     {pageNumbers.map((number, index) => (
         <div key={index} className={`page-item ${currentPage===number ? 'active' : ''}`} >
-            <a onClick={() => paginate(number)} className="page-link" href="#" id={number.toString()}>
+            <a onClick={() => paginate(number)} className="page-link">
                 {number}
             </a>
         </div>
